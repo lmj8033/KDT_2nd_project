@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Venti MENU</title>
+    <style>
+
+        *{
+            background-color:beige;
+        }
+
+        li {
+            background-color: white;
+        }
+
+        #coffee {
+            display: inline-block;
+            font-size: 20px;
+            background-color: purple;
+            color:white;
+            border-radius: 5px;
+        }
+
+        .method {
+            display: inline-block;
+            background-color: black;
+            color:white;
+            border-radius: 5px;
+        }
+
+        li.method {
+            font-size:20px;
+        }
+
+        ul>#coffee {
+            color: black;
+            font-weight: bold;
+        }
+        
+        div .choco {
+            background-color: chocolate;
+        }
+
+        .choco + li {
+            background-color: lightcoral;
+        }
+
+        .green~li {
+            background-color: burlywood;
+        }
+
+        h1:hover {
+            font-size: 40px;
+        }
+
+        h1:active {
+            color: red;
+        }
+
+        input:focus {
+            background-color: purple;
+        }
+
+        .beverage :first-child {
+            background-color: lightpink;
+        }
+
+        .beverage :last-child {
+            background-color: whitesmoke;
+        }
+        .beverage *:nth-child(4) {
+            background-color: green;
+        }
+
+        .drink>ul *:not(.milk) {
+            background-color: orange;
+        }
+
+
+        .comment {
+            font-size: 30px;
+        }
+
+        .comment::after {
+            content: " 드세요!";
+            font-size: 30px;
+        }
+        
+        .comment::before {
+            content: "감사합니다!";
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="color:purple"><i><a href="https://www.theventi.co.kr/new2020/main/main.html">THE_VENTI</a></i></h1>
+
+    주문자 이름 입력:<input type="text" name="name"/>
+    <div class="drink">
+        <ul>
+            <li id="coffee">커피</li>
+            <li>아이스 아메리카노(COLD)         1,800원</li>
+            <li class="milk">카페라떼                        1,500원</li>
+            <li>바닐라라떼                      1,500원</li>
+        </ul>
+    </div>
+
+    <div class="beverage">
+        <ul>
+            <li>딸기요거트스무디                   3,000원</li>
+            <li class="choco">초코라떼                   3,000원</li>
+            <li>딸기라떼                   3,000원</li>
+            <li class="green">녹차라떼                   3,000원</li>
+            <li>오곡라떼                   3,000원</li>
+            <li>미숫가루                   3,000원</li>
+            <li>요거트스무디                   3,000원</li>
+        </ul>
+    </div>
+
+    <hr/>
+
+    <table border="1">
+        <ul><li class="method">제조법</li></ul>
+        <tr>
+            <th>사진</th>
+            <th>HOT</th>
+            <th>COLD</th>   
+        </tr>
+
+        <tr>
+            <td><img src="coffee.jpg"></td>
+            <td>1.HOT 컵 <br>온수(420g)
+                <br><br>
+                2.<em>마일드</em> 샷
+            </td>
+            <td>1.ICE 컵 <br>-식수 중앙선<br><br>
+                2.간얼음 - 얼음선<br><br>
+                3.<em>마일드</em> 샷
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="lattee.jpg"></td>
+            <td>
+                1.HOT 컵 <br>- <em>다크</em>샷<br><br>
+                2.우유 350 스팀<br><br>
+                3.스팀 우유 붓기
+            </td>
+            <td>
+                1.ICE 컵 <br>- 우유 중앙선<br><br>
+                2.간얼음 - 얼음선<br><br>
+                3.<em>다크</em> 샷
+            </td>
+
+        </tr>
+
+        <tr>
+            <td><img src="vanilla.jpg"></td>
+            <td>
+                1.HOT 컵 <br>- 다크샷<br><br>
+                2.바닐라향파우더(30g)<br><br>
+                3.우유 350 스팀<br><br>
+                4.스팀 우유 붓기
+            </td>
+            <td>
+                1.ICE 컵 <br>- 바닐라라떼 베이스(255g)<br><br>
+                2.간얼음 - 얼음선<br><br>
+                3.다크 샷
+            </td>
+        </tr>
+
+    </table>
+
+    <br><br>
+    <div class="comment"><br>맛있게</div>
+</body>
+</html>
